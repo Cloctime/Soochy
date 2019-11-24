@@ -34,7 +34,6 @@ class Film:
         self.__director=film[1]
         self.__autreFilm=film[5]
 
-
         with open('title.principals.tsv') as tsvfile:
             film=[]
             reader = csv.reader(tsvfile, delimiter='\t')
@@ -58,6 +57,7 @@ class Film:
                         acteurs.append(row[1])
 
         self.__acteurs=acteurs
+
 
 
     def getTitleId(self):
@@ -88,29 +88,6 @@ class Film:
         return self.__acteurs
 
 
-        with open('title.principals.tsv') as tsvfile:
-            film=[]
-            reader = csv.reader(tsvfile, delimiter='\t')
-            for row in reader:
-                if row[0]==self.__titleId:
-                    film.append(row)
-
-        acteursId=[]
-        for person in film:
-            if person[3]=='actor' or person[3]=='actress':
-                acteursId.append(person[2])
-
-        self.__acteursId=acteursId
-
-        acteurs=[]
-        for acteurId in self.__acteursId:
-            with open('name.basics.tsv') as tsvfile:
-                reader = csv.reader(tsvfile, delimiter='\t')
-                for row in reader:
-                    if row[0]==acteurId:
-                        acteurs.append(row[1])
-
-        self.__acteurs=acteurs
 
 
 
@@ -128,3 +105,5 @@ print(c.getAutre())
 c=Film('Toy Story')
 #c2=Film('men in black')
 '''
+#c=Film('Shutter Island')
+#print(c)
