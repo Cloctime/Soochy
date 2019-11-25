@@ -16,7 +16,7 @@
   background-color: #0E2633;
   position: fixed;
   left: 10px;
-  top: 0;
+  top: 130px;
   height: 90vh;
   z-index: 1;
   padding: 3rem 20px 2rem 20px;
