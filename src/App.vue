@@ -1,21 +1,31 @@
 <template>
   <div id="app">
+    <Sidebar></Sidebar>
     <div id="header">
       <img src="./assets/soochy120px.png" alt="logo Soochy">
-    </div>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import Sidebar from '@/components/Sidebar.vue'
+
+export default {
+  name: 'app',
+  components: {
+    Sidebar
+  }
+}
+</script>
 
 <style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
+  background-color: #deddd2;
+  background-clip: padding-box;
 }
 
 #header {
