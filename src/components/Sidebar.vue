@@ -23,7 +23,7 @@
   padding: 3rem 20px 2rem 20px;
   width: 250px;
 }
- ul.sidebar-panel-nav {
+ul.sidebar-panel-nav {
    margin-top: -30px;
  }
 ul.sidebar-panel-nav > li {

@@ -27,9 +27,10 @@ export default {
 }
 
 #header {
+  position: fixed;
   height: 130px;
-  background-color: #CF2431;
   padding: 0 20px;
+  background-color: #CF2431;
   text-align: left;
 }
 
