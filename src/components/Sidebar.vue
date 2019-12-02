@@ -40,6 +40,7 @@ ul.sidebar-panel-nav > li >  a {
   font-size: 1.8rem;
   display: block;
 }
+
 /* Le link actif ne fonctionne plus; à réparer */
 a.router-link-exact-active {
   color: rgb(207, 36, 49);
