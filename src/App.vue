@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <Sidebar></Sidebar>
     <div id="header">
-      <img src="./assets/soochy120px.png" alt="logo Soochy">
+      <img id="logo-soochy" src="./assets/soochy2x.png" alt="logo Soochy">
     </div>
+    <Sidebar/>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Sidebar from '@/components/Sidebar.vue'
+import Sidebar from '@/components/TheSidebar.vue'
 
 export default {
   name: 'app',
@@ -23,15 +23,31 @@ export default {
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
+  color: #0E2633;
+}
+
+#logo-soochy {
+  height: 120px;
+  width: auto;
 }
 
 #header {
-  position: fixed;
+  position: absolute;
   height: 130px;
+  width: 100%;
   padding: 0 20px;
   background-color: #CF2431;
   text-align: left;
+  z-index: 100;
+}
+
+.Sidebar {
+  z-index: 99;
+}
+
+.router-view {
+  z-index: 98;
+  position: fixed;
 }
 
 </style>

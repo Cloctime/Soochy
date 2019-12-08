@@ -10,21 +10,19 @@
 
 <style scoped>
 .sidebar {
-  overflow-y:auto ;
   color: rgba(0, 0, 0, 0); /* couleur des puces */
   text-align: center;
   background-color: #0E2633;
-  position: fixed;
+  position: absolute;
+  top: 0;
   left: 10px;
-  top: 130px;
-  /* height: 90vh; */
   bottom: 10px;
   z-index: 1;
   padding: 3rem 20px 2rem 20px;
   width: 250px;
 }
 ul.sidebar-panel-nav {
-   margin-top: -30px;
+   margin-top: 110px;
  }
 ul.sidebar-panel-nav > li {
   padding: 10px 0 10px 0;

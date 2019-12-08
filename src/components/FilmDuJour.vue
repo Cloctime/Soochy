@@ -6,11 +6,14 @@
 
 <style scoped>
 .filmdujour {
+  position: relative;
   background-color: rgb(14, 38, 51, 0.2);
-  border-radius: 15px;
+  border-radius: 10px;
   height: 230px;
   width: 800px;
-  margin-left: 200px;
+  /* padding-left: 200px;
+  margin-left: 200px; */
+  margin-top: 130px;
   text-align: left;
 }
 
