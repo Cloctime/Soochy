@@ -2,16 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="<%= BASE_URL %>logo-soochy.ico">
     <title>Soochy</title>
   </head>
-  <body style="margin: 0; background-color: #deddd2" >
+  <body>
     <noscript>
       <strong>We're sorry but soochy doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="header">
+      <img id="logo-soochy" src="./src/assets/soochy2x.png" alt="logo Soochy">
+    </div>
+    <div class="sidebar">
+      <ul class="sidebar-panel-nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="research.html">Recherche</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+      </ul>
+    </div>
   </body>
 </html>
+ <!-- style="margin: 0; background-color: #deddd2" -->
