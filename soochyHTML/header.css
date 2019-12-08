@@ -1,0 +1,12 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#header {
+  height: 130px;
+  background-color: #CF2431;
+  padding: 0 20px;
+  text-align: left;
+}
