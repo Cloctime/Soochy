@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>film:{{result[1]}}</p>
+    <p>réalisateur:{{result[0][0][0]}}</p>
+    <p>acteurs:</p>
+      {% for acteur in result[2]%}
+        <ul>
+          <li>{{acteur[0][0]}}</li>
+        </ul>
+      {%endfor%}
+    <p>durée:{{result[3]}}</p>
+    <p>date de sortie:{{result[4]}}</p>
+  </body>
+</html>
