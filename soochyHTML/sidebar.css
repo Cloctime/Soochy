@@ -6,15 +6,16 @@
   position: fixed;
   left: 10px;
   top: 0;
-  /* height: 90vh; */
   bottom: 10px;
   z-index: 1;
   padding: 3rem 20px 2rem 20px;
   width: 250px;
 }
+
  ul.sidebar-panel-nav {
    margin-top: 100px;
  }
+
 ul.sidebar-panel-nav > li {
   padding: 10px 0 10px 0;
 }
@@ -36,5 +37,4 @@ a.router-link-exact-active {
   color: rgb(207, 36, 49);
   text-decoration: none; /*retire l'aspect "souligné"*/
   background-color: rgb(207, 36, 49, 0.33);
-  text-decoration: none; /*retire l'aspect "souligné"*/
 }

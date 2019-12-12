@@ -8,5 +8,12 @@
   height: 130px;
   background-color: #CF2431;
   padding: 0 20px;
+  width: 100vw;
   text-align: left;
+  z-index: 98;
+  position: absolute;
+}
+
+#logo {
+  height: 120px;
 }

@@ -5,14 +5,17 @@
     <<link href="{{ url_for('static', filename='sidebar.css') }}" rel="stylesheet" type="text/css" />
     <<link href="{{ url_for('static', filename='header.css') }}" rel="stylesheet" type="text/css" />
     <title>Accueil</title>
+    <style>
+    body {margin: 0; padding: 0; background-color: #DEDDD2;}
+    </style>
   </head>
   <body>
     <div id="header">
-      <img src="{{url_for('static',filename='soochy120px.png')}}" alt="logo Soochy">
+      <img id="logo" src="{{url_for('static',filename='soochy2x.png')}}" alt="logo Soochy">
     </div>
     <div class="sidebar">
       <ul class="sidebar-panel-nav">
-        <li><a href="home.html">Accueil</a></li>
+        <li><a href="/">Accueil</a></li>
         <li><a href="research.html">Recherche</a></li>
         <li><a href="playlist.html">Playlist</a></li>
         <li><a href="test.html">Test</a></li>
