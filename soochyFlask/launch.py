@@ -5,13 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-<<<<<<< HEAD
-    return render_template('test.html') #('home.html') pour le visuel
-=======
-    return render_template('test.html')
->>>>>>> 33e88149c61fa497a89ee91a7e2b91e032aa5540
-
-
+    return render_template('home.html') #('home.html') pour le visuel
 
 @app.route('/film', methods=['POST'])
 def film():
@@ -39,10 +33,4 @@ def film():
 #     return url_for(endpoint, **values)
 
 if __name__ == '__main__':
-<<<<<<< HEAD
     app.run(debug=True)
-=======
-    app.run(
-        debug=True
-    )
->>>>>>> 33e88149c61fa497a89ee91a7e2b91e032aa5540
