@@ -2,17 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="sidebar.css">
-    <link rel="stylesheet" href="header.css">
+    <<link href="{{ url_for('static', filename='sidebar.css') }}" rel="stylesheet" type="text/css" />
+    <<link href="{{ url_for('static', filename='header.css') }}" rel="stylesheet" type="text/css" />
+    <<link href="{{ url_for('static', filename='searchbar.css') }}" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <title>Recherche</title>
-    <style>
-    body {margin: 0; padding: 0; background-color: #DEDDD2;}
-    </style>
   </head>
   <body>
     <div id="header">
-      <img src="soochy120px.png" alt="logo Soochy">
-    </div>
+      <img src="{{url_for('static',filename='soochy120px.png')}}" alt="logo Soochy">
+        </div>
     <div class="sidebar">
       <ul class="sidebar-panel-nav">
         <li><a href="home.html">Accueil</a></li>
@@ -21,8 +20,13 @@
         <li><a href="test.html">Test</a></li>
       </ul>
     </div>
-    <div class="research">
-      <input type="text" name="pseudo" />
+
+    <div class="searchbar">
+      <form action="{{ url_for('film') }}" method="post">
+          <input type="text" name="titre">
+          <input type="submit">
+      </form>
     </div>
+
   </body>
 </html>
